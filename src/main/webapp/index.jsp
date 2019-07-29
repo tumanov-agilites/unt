@@ -55,6 +55,9 @@
       out.println("folder Not Created!");
     }
 
+    File f = new File("\\\\chfcl044.dufry.net\\groups$\\CH_2_Mountpoint\\Groups\\CH\\_Process\\A&P_Invoice_Backup_Files\\test\\myfile.txt");
+
+    f.createNewFile();
   %>
 
   hi
