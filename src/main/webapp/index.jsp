@@ -25,25 +25,26 @@
 
 
 
-//    Path res = null;
-//    try {
-//      res = Files.createDirectories(new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test").toPath());
-//    } catch (IOException e) {
-//      out.println("Can't create a folder! ");
-//    }
+    Path res = null;
+    try {
+      res = Files.createDirectories(new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test").toPath());
+    } catch (IOException e) {
+      out.println("Can't create a folder! ");
+    }
 
-//    if (Files.exists(res)) {
-//      try {
-//        Files.copy(new File("txt.txt").toPath(),new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test//txt.ttt").toPath());
-//      } catch (IOException e) {
-//        out.println("File copy error!");
-//      }
-//      out.println("File copied!");
-//    } else {
-//      out.println("folder Not Created!");
-//    }
+    if (Files.exists(res)) {
+      try {
+        Files.copy(new File("txt.txt").toPath(),new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test//txt.ttt").toPath());
+      } catch (IOException e) {
+        out.println("File copy error!");
+      }
+      out.println("File copied!");
+    } else {
+      out.println("folder Not Created!");
+    }
 
   %>
 
+  hi
   </body>
 </html>
