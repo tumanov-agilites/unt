@@ -23,7 +23,7 @@
       out.println("Not Exist!");
     }
 
-    if (Files.exists(new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/P_Invoice_Backup_Files").toPath())) {
+    if (Files.exists(new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files").toPath())) {
       out.println("Exist!");
     } else {
       out.println("Not Exist!");
@@ -38,7 +38,7 @@
     }
 
 
-    if (Files.exists(new File("txt.txt").toPath())) {
+    if (Files.exists(new File("D:/txt.txt").toPath())) {
       out.println("Exist!");
     } else {
       out.println("Not Exist!");
@@ -46,7 +46,7 @@
 
     if (Files.exists(res)) {
       try {
-        Files.copy(new File("txt.txt").toPath(),new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test/txt.ttt").toPath());
+        Files.copy(new File("D:/txt.txt").toPath(),new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test/txt.ttt").toPath());
       } catch (IOException e) {
         out.println("File copy error!");
       }
