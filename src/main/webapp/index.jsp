@@ -45,11 +45,11 @@
     }
 
     if (Files.exists(res)) {
-      try {
+//      try {
         Files.copy(new File("D:/txt.txt").toPath(),new File("\\\\chfcl044.dufry.net\\groups$\\CH_2_Mountpoint\\Groups\\CH\\_Process\\A&P_Invoice_Backup_Files\\test\\txt.ttt").toPath());
-      } catch (IOException e) {
-        out.println("File copy error!");
-      }
+//      } catch (IOException e) {
+//        out.println("File copy error!");
+//      }
       out.println("File copied!");
     } else {
       out.println("folder Not Created!");
