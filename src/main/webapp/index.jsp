@@ -2,6 +2,7 @@
 <%@ page import="java.io.File" %>
 <%@ page import="java.nio.file.Path" %>
 <%@ page import="java.io.IOException" %>
+<%@ page import="org.apache.commons.io.FileUtils" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
@@ -29,6 +30,7 @@
       out.println("Not Exist!");
     }
 
+    FileUtils.deleteDirectory(new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test"));
 
     Path res = null;
     try {
@@ -41,8 +43,12 @@
     if (Files.exists(new File("D:/txt.txt").toPath())) {
       out.println("F Exist!");
     } else {
-      out.println("Not Exist!");
+      out.println("Not Exist! \n");
     }
+
+    File f = new File("\\\\chfcl044.dufry.net\\groups$\\CH_2_Mountpoint\\Groups\\CH\\_Process\\A&P_Invoice_Backup_Files\\test\\myfile.txt");
+    f.createNewFile();
+
 
     if (Files.exists(res)) {
 //      try {
@@ -55,9 +61,6 @@
       out.println("folder Not Created!");
     }
 
-    File f = new File("\\\\chfcl044.dufry.net\\groups$\\CH_2_Mountpoint\\Groups\\CH\\_Process\\A&P_Invoice_Backup_Files\\test\\myfile.txt");
-
-    f.createNewFile();
   %>
 
   hi
