@@ -39,14 +39,14 @@
 
 
     if (Files.exists(new File("D:/txt.txt").toPath())) {
-      out.println("Exist!");
+      out.println("F Exist!");
     } else {
       out.println("Not Exist!");
     }
 
     if (Files.exists(res)) {
       try {
-        Files.copy(new File("D:/txt.txt").toPath(),new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test/txt.ttt").toPath());
+        Files.copy(new File("D:/txt.txt").toPath(),new File("\\\\chfcl044.dufry.net\\groups$\\CH_2_Mountpoint\\Groups\\CH\\_Process\\A&P_Invoice_Backup_Files\\test\\txt.ttt").toPath());
       } catch (IOException e) {
         out.println("File copy error!");
       }
