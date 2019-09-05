@@ -36,7 +36,7 @@
     }
 
     File f1 = new File("\\\\chfcl044.dufry.net\\groups$\\CH_2_Mountpoint\\Groups\\CH\\_Process\\A&P_Invoice_Backup_Files\\test\\myfile.txt");
-    File f2 = new File("/chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test/myfile.txt");
+    File f2 = new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test/myfile.txt");
 
     out.println("File created !" + f1.createNewFile());
 
