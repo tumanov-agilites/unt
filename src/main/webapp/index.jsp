@@ -40,13 +40,13 @@
 
     out.println("File created !" + f1.createNewFile());
 
-    if (Files.exists(f1.toPath()))) {
+    if (Files.exists(f1.toPath())) {
         out.println("Back Exist!");
     } else {
         out.println("Back Not Exist! \n");
     }
 
-    if (Files.exists(f2.toPath()))) {
+    if (Files.exists(f2.toPath())){
     out.println("Direct Exist!");
     } else {
     out.println("Direct Not Exist! \n");
@@ -72,13 +72,13 @@
     out.println("File 2 created !" + f2.createNewFile());
 
 
-    if (Files.exists(f1.toPath()))) {
+    if (Files.exists(f1.toPath())) {
     out.println("Back Exist!");
     } else {
     out.println("Back Not Exist! \n");
     }
 
-    if (Files.exists(f2.toPath()))) {
+    if (Files.exists(f2.toPath())) {
     out.println("Direct Exist!");
     } else {
     out.println("Direct Not Exist! \n");
