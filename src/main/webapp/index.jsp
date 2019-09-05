@@ -115,12 +115,12 @@ hi
 
 <%
 
-    File f4 = new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test"+File.separator+ "myfile.txt");
+    File f4 = new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test"+File.separator+ "t2");
     out.println(f4.getPath());
     out.println("Dir 4 created " + f4.mkdirs());
 
 
-    File f3 = new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test");
+    File f3 = new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test/t2");
 
     Path path = Paths.get(f3.getPath(), "myfile.txt");
     out.println(path);
