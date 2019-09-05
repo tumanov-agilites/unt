@@ -124,14 +124,14 @@ hi
 
     Path path = Paths.get(f3.getPath(), "myfile.txt");
     out.println(path);
-    out.println("File 3 created " + f3.createNewFile());
+    out.println("File 3 created " + Files.copy(new File("D:/txt.txt").toPath(), path));
 
 
     if (Files.exists(path)) {
         Files.delete(path);
         out.println("File removed!");
     } else {
-        out.println("file not removed Not Created!");
+        out.println("file not removed!");
     }
 %>
 </body>
