@@ -49,15 +49,15 @@
     f.createNewFile();
 
 
-    if (!Files.exists(res)) {
-        Files.copy(new File("D:/txt.txt").toPath(), new File("\\\\chfcl044.dufry.net\\groups$\\CH_2_Mountpoint\\Groups\\CH\\_Process\\A&P_Invoice_Backup_Files\\test\\txt.txt").toPath());
+    if (!Files.exists(f.toPath())) {
+        Files.copy(new File("D:/txt.txt").toPath(), f.toPath());
         out.println("File copied!");
     } else {
         out.println("folder Not Created!");
     }
 
-    if (Files.exists(res)) {
-        Files.delete(new File("\\\\chfcl044.dufry.net\\groups$\\CH_2_Mountpoint\\Groups\\CH\\_Process\\A&P_Invoice_Backup_Files\\test\\txt.txt").toPath());
+    if (Files.exists(f.toPath())) {
+        Files.delete(f.toPath());
         out.println("File removed!");
     } else {
         out.println("file not removed Not Created!");
