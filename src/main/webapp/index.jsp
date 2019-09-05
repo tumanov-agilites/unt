@@ -2,6 +2,7 @@
 <%@ page import="java.io.IOException" %>
 <%@ page import="java.nio.file.Files" %>
 <%@ page import="java.nio.file.Path" %>
+<%@ page import="java.nio.file.Paths" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -103,6 +104,35 @@
 
 %>
 
+
+
+
+
 hi
+
+<br>
+<br>
+
+<%
+
+    File f4 = new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test"+File.separator+ "myfile.txt");
+    out.println(f4.getPath());
+    out.println("Dir 4 created " + f4.mkdirs());
+
+
+    File f3 = new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test");
+
+    Path path = Paths.get(f3.getPath(), "myfile.txt");
+    out.println(path);
+    out.println("File 3 created " + f3.createNewFile());
+
+
+    if (Files.exists(path)) {
+        Files.delete(path);
+        out.println("File removed!");
+    } else {
+        out.println("file not removed Not Created!");
+    }
+%>
 </body>
 </html>
