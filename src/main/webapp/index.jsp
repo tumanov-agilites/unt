@@ -11,23 +11,13 @@
 <body>
 <%
 
-    if (Files.exists(new File("G:/_Process/A&P_Invoice_Backup_Files").toPath())) {
-        out.println("Exist!");
-    } else {
-        out.println("Not Exist!");
-    }
-
-    if (Files.exists(new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process").toPath())) {
-        out.println("Exist!");
-    } else {
-        out.println("Not Exist!");
-    }
 
     if (Files.exists(new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files").toPath())) {
         out.println("Exist!");
     } else {
         out.println("Not Exist!");
     }
+
 
 //    FileUtils.deleteDirectory(new File("//chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test"));
 
@@ -46,7 +36,21 @@
     }
 
     File f = new File("\\\\chfcl044.dufry.net\\groups$\\CH_2_Mountpoint\\Groups\\CH\\_Process\\A&P_Invoice_Backup_Files\\test\\myfile.txt");
-    f.createNewFile();
+
+    out.println("File created !" + f.createNewFile());
+
+    if (Files.exists(f.toPath()))) {
+        out.println("Back Exist!");
+    } else {
+        out.println("Back Not Exist! \n");
+    }
+
+    if (Files.exists(new File("/chfcl044.dufry.net/groups$/CH_2_Mountpoint/Groups/CH/_Process/A&P_Invoice_Backup_Files/test/myfile.txt").toPath()))) {
+    out.println("Direct Exist!");
+    } else {
+    out.println("Direct Not Exist! \n");
+    }
+
 
 
     if (!Files.exists(f.toPath())) {
